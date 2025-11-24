@@ -36,9 +36,9 @@ PIPELINE DESIGN
 # Arquitetura de Dados
     O pipeline usa uma arquitetura em múltiplas camadas:
     
-     Bronze: Dados brutos em JSON vindos do Event Hub armazenados no ADLS.  
-     Silver: Dados limpos e estruturados (tipos validados e tratamento de nulos).   
-     Gold: Dados agregados e prontos para consumo em BI.
+     **Bronze**: Dados brutos em JSON vindos do Event Hub armazenados no ADLS.  
+     **Silver**: Dados limpos e estruturados (tipos validados e tratamento de nulos).   
+     **Gold**: Dados agregados e prontos para consumo em BI.
 
 # Tools & Technologies: 
     Azure Event Hub – Ingestão de dados em tempo real
@@ -48,6 +48,29 @@ PIPELINE DESIGN
     Power BI – Visualização
     Python 3.9+ – Core programming
     Git – Version control
+
+# Design de Star Schema
+
+A camada Gold no Synapse usa um esquema em estrela para análises rápidas:
+Tabela Fato: FactPatientFlow — contém visitas dos pacientes, tempos de espera, entrada/saída.
+Tabelas Dimensão:
+        DimDepartment: informações dos departamentos.
+        DimPatient: dados demográficos dos pacientes.
+        DimTime: dimensão de datas e horários.
+
+
+# Implementação passo a passo
+##### 1. Configuração do Event Hub
+    Criado o namespace do Event Hub e o hub patient-flow.
+    Configurados os grupos de consumidores para o streaming no Databricks.
+
+#### 2. Simulação de Dados
+    Desenvolvido o script Python patient_flow_generator.py para enviar dados falsos de pacientes (departamentos, tempo de espera, status de alta) para o Event Hub.
+    Inclui o código do produtor (producer).
+
+#### 3. Configuração do Storage
+    Configurado o Azure Data Lake Storage (ADLS Gen2).
+
 
 
 
