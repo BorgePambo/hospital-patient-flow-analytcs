@@ -1,4 +1,4 @@
-# Real-Time Patient Flow Analytics on Azure
+# Análise em Tempo Real do Fluxo de Pacientes no Azure
 
 📌 Project Overview
 Este projeto demonstra um #pipeline de engenharia de dados em tempo real para a área da saúde, projetado para analisar o fluxo de pacientes entre os departamentos de um hospital utilizando serviços da nuvem Azure.
@@ -36,18 +36,18 @@ PIPELINE DESIGN
 # Arquitetura de Dados
     O pipeline usa uma arquitetura em múltiplas camadas:
     
-     **Bronze**: Dados brutos em JSON vindos do Event Hub armazenados no ADLS.  
-     **Silver**: Dados limpos e estruturados (tipos validados e tratamento de nulos).   
-     **Gold**: Dados agregados e prontos para consumo em BI.
+    Bronze**: Dados brutos em JSON vindos do Event Hub armazenados no ADLS.  
+    Silver**: Dados limpos e estruturados (tipos validados e tratamento de nulos).   
+    Gold**: Dados agregados e prontos para consumo em BI.
 
 # Tools & Technologies: 
-    Azure Event Hub – Ingestão de dados em tempo real
-    Azure Databricks – Processamento ETL usando PySpark.
-    Azure Data Lake Storage – Armazenamento de dados brutos e dados tratados
-    Azure Synapse SQL Pool – Data warehouse para análise 
-    Power BI – Visualização
-    Python 3.9+ – Core programming
-    Git – Version control
+  Azure Event Hub – Ingestão de dados em tempo real
+  Azure Databricks – Processamento ETL usando PySpark.
+  Azure Data Lake Storage – Armazenamento de dados brutos e dados tratados
+  Azure Synapse SQL Pool – Data warehouse para análise 
+  Power BI – Visualização
+  Python 3.9+ – Core programming
+  Git – Version control
 
 # Design de Star Schema
 
@@ -69,7 +69,8 @@ Desenvolvido o script Python patient_flow_generator.py para enviar dados falsos 
 Inclui o código do produtor (producer).
     
 #### 3. Configuração do Storage
- Configurado o Azure Data Lake Storage (ADLS Gen2).
+Configurado o Azure Data Lake Storage (ADLS Gen2).
+ 
 #### 4. DATABRICKS PROCESSAMENTO 
 Notebook 1: https://github.com/BorgePambo/hospital-patient-flow-analytcs/blob/main/databricks-notebook/01-bronze_raw_data.ipynb
 Notebook 2: https://github.com/BorgePambo/hospital-patient-flow-analytcs/blob/main/databricks-notebook/02-silver_cleandata.ipynb
@@ -78,10 +79,11 @@ Notebook 3: https://github.com/BorgePambo/hospital-patient-flow-analytcs/blob/ma
 
 
 ### Principais Resultados
-### Pipeline de ponta a ponta: Da ingestão em tempo real → transformação → data warehouse → analytics.
-- Arquitetura escalável: Fácil de adaptar para outros conjuntos de dados hospitalares.
--Insights de negócio: Administradores podem monitorar ocupação de leitos, fluxo de pacientes e eficiência dos departamentos em tempo real.
-- Valor para portfólio: Demonstra habilidades de Engenharia de Dados e Analytics em um único projeto.
+######## Pipeline de ponta a ponta: Da ingestão em tempo real → transformação → data warehouse → analytics.
+ 1. Arquitetura escalável: Fácil de adaptar para outros conjuntos de dados hospitalares.
+ 2. nsights de negócio: Administradores podem monitorar ocupação de leitos, fluxo de pacientes e eficiência dos departamentos em tempo real.
+ 3. Valor para portfólio: Demonstra habilidades de Engenharia de Dados e Analytics em um único projeto.
+
 
 
 
