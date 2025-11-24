@@ -71,15 +71,18 @@ Inclui o código do produtor (producer).
 #### 3. Configuração do Storage
  Configurado o Azure Data Lake Storage (ADLS Gen2).
 #### 4. DATABRICKS PROCESSAMENTO 
-        Notebook 1: https://github.com/BorgePambo/hospital-patient-flow-analytcs/blob/main/databricks-notebook/01-bronze_raw_data.ipynb
+Notebook 1: https://github.com/BorgePambo/hospital-patient-flow-analytcs/blob/main/databricks-notebook/01-bronze_raw_data.ipynb
+Notebook 2: https://github.com/BorgePambo/hospital-patient-flow-analytcs/blob/main/databricks-notebook/02-silver_cleandata.ipynb
+Notebook 3: https://github.com/BorgePambo/hospital-patient-flow-analytcs/blob/main/databricks-notebook/03-gold.ipynb
 
 
 
 ### Principais Resultados
-Pipeline de ponta a ponta: Da ingestão em tempo real → transformação → data warehouse → analytics.
-Arquitetura escalável: Fácil de adaptar para outros conjuntos de dados hospitalares.
-Insights de negócio: Administradores podem monitorar ocupação de leitos, fluxo de pacientes e eficiência dos departamentos em tempo real.
-Valor para portfólio: Demonstra habilidades de Engenharia de Dados e Analytics em um único projeto.
+### Pipeline de ponta a ponta: Da ingestão em tempo real → transformação → data warehouse → analytics.
+- Arquitetura escalável: Fácil de adaptar para outros conjuntos de dados hospitalares.
+-Insights de negócio: Administradores podem monitorar ocupação de leitos, fluxo de pacientes e eficiência dos departamentos em tempo real.
+- Valor para portfólio: Demonstra habilidades de Engenharia de Dados e Analytics em um único projeto.
+
 
 
 
