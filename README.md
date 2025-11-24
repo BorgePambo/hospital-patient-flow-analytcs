@@ -10,11 +10,11 @@ O pipeline ingere dados em streaming, processa-os no Databricks (PySpark) e os a
 PIPELINE DESIGN
 <img width="1071" height="610" alt="pipeline_hospi" src="https://github.com/user-attachments/assets/9f83f05a-4cb8-4017-ad74-7771f4901be2" />
 
-OBJETIVO
-Collect real-time patient data via Azure Event Hub.
-Process and cleanse data using Databricks (Bronze → Silver → Gold layers).
-Implement a star schema in Synapse SQL Pool for efficient querying.
-Enable Version Control with Git.
+# OBJETIVO
+    1 - Coletar dados de pacientes em tempo real via Azure Event Hub.
+    2 - Processar e limpar os dados usando Databricks (camadas Bronze → Silver → Gold).
+    3 - Implementar um esquema estrela no Synapse SQL Pool para consultas eficientes.
+    4 - Habilitar Controle de Versão com Git.
 
 # Project Structure
     real-time-patient-flow-azure/
@@ -39,3 +39,4 @@ Enable Version Control with Git.
     Power BI – Dashboarding (future step)
     Python 3.9+ – Core programming
     Git – Version control
+
