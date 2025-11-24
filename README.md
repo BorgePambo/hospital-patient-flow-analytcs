@@ -12,8 +12,11 @@ PIPELINE DESIGN
 
 # OBJETIVO
     1 - Coletar dados de pacientes em tempo real via Azure Event Hub.
+    
     2 - Processar e limpar os dados usando Databricks (camadas Bronze → Silver → Gold).
+    
     3 - Implementar um esquema estrela no Synapse SQL Pool para consultas eficientes.
+    
     4 - Habilitar Controle de Versão com Git.
 
 # Project Structure
@@ -33,9 +36,9 @@ PIPELINE DESIGN
 # Arquitetura de Dados
     O pipeline usa uma arquitetura em múltiplas camadas:
     
-    ##Bronze: Dados brutos em JSON vindos do Event Hub armazenados no ADLS.  
-    ##Silver: Dados limpos e estruturados (tipos validados e tratamento de nulos).   
-    ##Gold: Dados agregados e prontos para consumo em BI.
+     Bronze: Dados brutos em JSON vindos do Event Hub armazenados no ADLS.  
+     Silver: Dados limpos e estruturados (tipos validados e tratamento de nulos).   
+     Gold: Dados agregados e prontos para consumo em BI.
 
 # Tools & Technologies: 
     Azure Event Hub – Ingestão de dados em tempo real
@@ -45,5 +48,6 @@ PIPELINE DESIGN
     Power BI – Visualização
     Python 3.9+ – Core programming
     Git – Version control
+
 
 
