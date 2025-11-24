@@ -30,13 +30,20 @@ PIPELINE DESIGN
     ├── git_commands/                  # Git Commands
     └── README.md              # Project documentation
 
+# Arquitetura de Dados
+    O pipeline usa uma arquitetura em múltiplas camadas:
+    
+    ##Bronze: Dados brutos em JSON vindos do Event Hub armazenados no ADLS.  
+    ##Silver: Dados limpos e estruturados (tipos validados e tratamento de nulos).   
+    ##Gold: Dados agregados e prontos para consumo em BI.
 
 # Tools & Technologies: 
-    Azure Event Hub – Real-time data ingestion
-    Azure Databricks – PySpark-based ETL processing
-    Azure Data Lake Storage – Staging raw and curated data
-    Azure Synapse SQL Pool – Data warehouse for analytics
-    Power BI – Dashboarding (future step)
+    Azure Event Hub – Ingestão de dados em tempo real
+    Azure Databricks – Processamento ETL usando PySpark.
+    Azure Data Lake Storage – Armazenamento de dados brutos e dados tratados
+    Azure Synapse SQL Pool – Data warehouse para análise 
+    Power BI – Visualização
     Python 3.9+ – Core programming
     Git – Version control
+
 
