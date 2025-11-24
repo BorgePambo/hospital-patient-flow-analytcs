@@ -61,17 +61,24 @@ Tabelas Dimensão:
 
 # Implementação passo a passo
 ##### 1. Configuração do Event Hub
-Criado o namespace do Event Hub e o hub patient-flow.
-Configurados os grupos de consumidores para o streaming no Databricks.
-
+    Criado o namespace do Event Hub e o hub patient-flow.
+    Configurados os grupos de consumidores para o streaming no Databricks.
 #### 2. Simulação de Dados
-Desenvolvido o script Python patient_flow_generator.py para enviar dados falsos de pacientes (departamentos, tempo de espera, status de alta) para o Event Hub.
-Inclui o código do produtor (producer).
-
+    Desenvolvido o script Python patient_flow_generator.py para enviar dados falsos de pacientes (departamentos, tempo de espera, status de alta) para o Event Hub.
+    Inclui o código do produtor (producer).
 #### 3. Configuração do Storage
-Configurado o Azure Data Lake Storage (ADLS Gen2).
+    Configurado o Azure Data Lake Storage (ADLS Gen2).
+#### 4. DATABRICKS PROCESSAMENTO 
+        Notebook 1: https://github.com/BorgePambo/hospital-patient-flow-analytcs/blob/main/databricks-notebook/01-bronze_raw_data.ipynb
 
-#### 4. Notebooks: https://github.com/BorgePambo/hospital-patient-flow-analytcs/blob/main/databricks-notebook/01-bronze_raw_data.ipynb
+
+
+### Principais Resultados
+    Pipeline de ponta a ponta: Da ingestão em tempo real → transformação → data warehouse → analytics.
+    Arquitetura escalável: Fácil de adaptar para outros conjuntos de dados hospitalares.
+    Insights de negócio: Administradores podem monitorar ocupação de leitos, fluxo de pacientes e eficiência dos departamentos em tempo real.
+    Valor para portfólio: Demonstra habilidades de Engenharia de Dados e Analytics em um único projeto.
+
 
 
 
