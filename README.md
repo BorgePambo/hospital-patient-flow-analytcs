@@ -79,10 +79,11 @@ Notebook 3: https://github.com/BorgePambo/hospital-patient-flow-analytcs/blob/ma
 
 
 ### Principais Resultados
-######## Pipeline de ponta a ponta: Da ingestão em tempo real → transformação → data warehouse → analytics.
+###### Pipeline de ponta a ponta: Da ingestão em tempo real → transformação → data warehouse → analytics.
  1. Arquitetura escalável: Fácil de adaptar para outros conjuntos de dados hospitalares.
  2. nsights de negócio: Administradores podem monitorar ocupação de leitos, fluxo de pacientes e eficiência dos departamentos em tempo real.
  3. Valor para portfólio: Demonstra habilidades de Engenharia de Dados e Analytics em um único projeto.
+
 
 
 
