@@ -4,8 +4,8 @@
 Este projeto demonstra um #pipeline de engenharia de dados em tempo real para a área da saúde, projetado para analisar o fluxo de pacientes entre os departamentos de um hospital utilizando serviços da nuvem Azure.
 O pipeline ingere dados em streaming, processa-os no Databricks (PySpark) e os armazena no Azure Synapse SQL Pool para análise e visualização.
 
-#Parte 1 – Engenharia de Dados: Construir o pipeline de ingestão e transformação em tempo real.
-#Parte 2 – Análises: Conectar o Synapse ao Power BI e criar um dashboard interativo com KPIs hospitalares.
+# Parte 1 – Engenharia de Dados: Construir o pipeline de ingestão e transformação em tempo real.
+# Parte 2 – Análises: Conectar o Synapse ao Power BI e criar um dashboard interativo com KPIs hospitalares.
 
 PIPELINE DESIGN
 <img width="1071" height="610" alt="pipeline_hospi" src="https://github.com/user-attachments/assets/9f83f05a-4cb8-4017-ad74-7771f4901be2" />
@@ -61,16 +61,17 @@ Tabelas Dimensão:
 
 # Implementação passo a passo
 ##### 1. Configuração do Event Hub
-    Criado o namespace do Event Hub e o hub patient-flow.
-    Configurados os grupos de consumidores para o streaming no Databricks.
+Criado o namespace do Event Hub e o hub patient-flow.
+Configurados os grupos de consumidores para o streaming no Databricks.
 
 #### 2. Simulação de Dados
-    Desenvolvido o script Python patient_flow_generator.py para enviar dados falsos de pacientes (departamentos, tempo de espera, status de alta) para o Event Hub.
-    Inclui o código do produtor (producer).
+Desenvolvido o script Python patient_flow_generator.py para enviar dados falsos de pacientes (departamentos, tempo de espera, status de alta) para o Event Hub.
+Inclui o código do produtor (producer).
 
 #### 3. Configuração do Storage
-    Configurado o Azure Data Lake Storage (ADLS Gen2).
+Configurado o Azure Data Lake Storage (ADLS Gen2).
 
+#### 4. Notebooks: https://github.com/BorgePambo/hospital-patient-flow-analytcs/blob/main/databricks-notebook/01-bronze_raw_data.ipynb
 
 
 
